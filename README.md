@@ -19,7 +19,7 @@ A PowerShell script that scans Active Directory computers, enumerates **BitLocke
 
 ## Requirements
 
-* **Windows PowerShell 5.1 *or* PowerShell 7+ (Windows)**
+* **PowerShell 7+**
 * **Active Directory Module for Windows PowerShell (RSAT)** installed
 * Network access to a domain controller
 * AD read permissions for:
@@ -35,7 +35,7 @@ A PowerShell script that scans Active Directory computers, enumerates **BitLocke
 
 1. Install RSAT including the **ActiveDirectory** PowerShell module.
 2. Save the script as `BitLocker-AdEscrow-Inventory.ps1`.
-3. Run from **Windows PowerShell 5.1 or PowerShell 7+** with sufficient AD rights.
+3. Run from **PowerShell 7+** with sufficient AD rights.
 
 The script aborts early if the AD module is unavailable.
 
@@ -125,7 +125,7 @@ The script aborts early if the AD module is unavailable.
 
 * **Read‑only**: the script does not modify AD.
 * Recovery key metadata can be sensitive. Handle exported CSVs accordingly.
-* In restrictive environments, read access to `msFVE‑RecoveryInformation` may require delegated permissions.
+* In restrictive environments, read access to `msFVE‑RecoveryInformation`  require delegated permissions.
 
 ---
 
